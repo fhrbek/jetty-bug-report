@@ -1,0 +1,333 @@
+root@test:/opt/git/jetty-bug-report# mvn exec:java
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Unnamed - puppetlabs:jetty-bug:jar:1.0-SNAPSHOT
+[INFO]    task-segment: [exec:java]
+[INFO] ------------------------------------------------------------------------
+[INFO] Preparing exec:java
+[INFO] No goals needed for project - skipping
+[INFO] [exec:java {execution: default-cli}]
+2014-07-29 10:04:20,710 INFO  [o.e.j.u.log] Logging initialized @3064ms
+
+Testing jetty client...
+Status of Jetty #35: 0
+  The failure of Jetty #35 was: java.io.EOFException
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.earlyEOF(HttpReceiverOverHTTP.java:264)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:1301)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.shutdown(HttpReceiverOverHTTP.java:169)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.readAndParse(HttpReceiverOverHTTP.java:117)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.process(HttpReceiverOverHTTP.java:70)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.receive(HttpReceiverOverHTTP.java:65)
+	at org.eclipse.jetty.client.http.HttpChannelOverHTTP.receive(HttpChannelOverHTTP.java:75)
+	at org.eclipse.jetty.client.http.HttpConnectionOverHTTP.onFillable(HttpConnectionOverHTTP.java:99)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:744)
+Status of Jetty #38: 0
+  The failure of Jetty #38 was: java.io.EOFException
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.earlyEOF(HttpReceiverOverHTTP.java:264)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:1301)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.shutdown(HttpReceiverOverHTTP.java:169)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.readAndParse(HttpReceiverOverHTTP.java:117)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.process(HttpReceiverOverHTTP.java:70)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.receive(HttpReceiverOverHTTP.java:65)
+	at org.eclipse.jetty.client.http.HttpChannelOverHTTP.receive(HttpChannelOverHTTP.java:75)
+	at org.eclipse.jetty.client.http.HttpConnectionOverHTTP.onFillable(HttpConnectionOverHTTP.java:99)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:744)
+Status of Jetty #36: 200
+Status of Jetty #66: 0
+  The failure of Jetty #66 was: java.lang.IllegalStateException
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.fill(SslConnection.java:552)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.readAndParse(HttpReceiverOverHTTP.java:100)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.process(HttpReceiverOverHTTP.java:70)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.receive(HttpReceiverOverHTTP.java:65)
+	at org.eclipse.jetty.client.http.HttpChannelOverHTTP.receive(HttpChannelOverHTTP.java:75)
+	at org.eclipse.jetty.client.http.HttpConnectionOverHTTP.onFillable(HttpConnectionOverHTTP.java:99)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:744)
+Status of Jetty #8: 200
+Status of Jetty #37: 0
+  The failure of Jetty #37 was: java.io.EOFException
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.earlyEOF(HttpReceiverOverHTTP.java:264)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:1301)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.shutdown(HttpReceiverOverHTTP.java:169)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.readAndParse(HttpReceiverOverHTTP.java:117)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.process(HttpReceiverOverHTTP.java:70)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.receive(HttpReceiverOverHTTP.java:65)
+	at org.eclipse.jetty.client.http.HttpChannelOverHTTP.receive(HttpChannelOverHTTP.java:75)
+	at org.eclipse.jetty.client.http.HttpConnectionOverHTTP.onFillable(HttpConnectionOverHTTP.java:99)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:744)
+Status of Jetty #7: 200
+Status of Jetty #11: 200
+Status of Jetty #65: 200
+Status of Jetty #64: 200
+Status of Jetty #39: 200
+Status of Jetty #74: 0
+  The failure of Jetty #74 was: java.lang.IllegalStateException
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.fill(SslConnection.java:552)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.readAndParse(HttpReceiverOverHTTP.java:100)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.process(HttpReceiverOverHTTP.java:70)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.receive(HttpReceiverOverHTTP.java:65)
+	at org.eclipse.jetty.client.http.HttpChannelOverHTTP.receive(HttpChannelOverHTTP.java:75)
+	at org.eclipse.jetty.client.http.HttpConnectionOverHTTP.onFillable(HttpConnectionOverHTTP.java:99)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:744)
+Status of Jetty #13: 200
+Status of Jetty #9: 200
+Status of Jetty #0: 200
+Status of Jetty #69: 200
+Status of Jetty #14: 200
+Status of Jetty #76: 200
+Status of Jetty #68: 200
+Status of Jetty #71: 200
+Status of Jetty #70: 200
+Status of Jetty #67: 200
+Status of Jetty #15: 200
+Status of Jetty #77: 200
+Status of Jetty #73: 200
+Status of Jetty #40: 200
+Status of Jetty #79: 0
+  The failure of Jetty #79 was: java.lang.IllegalStateException
+	at org.eclipse.jetty.io.ssl.SslConnection$DecryptedEndPoint.fill(SslConnection.java:552)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.readAndParse(HttpReceiverOverHTTP.java:100)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.process(HttpReceiverOverHTTP.java:70)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.receive(HttpReceiverOverHTTP.java:65)
+	at org.eclipse.jetty.client.http.HttpChannelOverHTTP.receive(HttpChannelOverHTTP.java:75)
+	at org.eclipse.jetty.client.http.HttpConnectionOverHTTP.onFillable(HttpConnectionOverHTTP.java:99)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:744)
+Status of Jetty #81: 200
+Status of Jetty #72: 200
+Status of Jetty #80: 200
+Status of Jetty #16: 200
+Status of Jetty #75: 200
+Status of Jetty #87: 200
+Status of Jetty #88: 200
+Status of Jetty #91: 200
+Status of Jetty #22: 200
+Status of Jetty #92: 200
+Status of Jetty #90: 200
+Status of Jetty #20: 200
+Status of Jetty #84: 200
+Status of Jetty #99: 200
+Status of Jetty #82: 200
+Status of Jetty #96: 200
+Status of Jetty #17: 200
+Status of Jetty #98: 200
+Status of Jetty #83: 200
+Status of Jetty #97: 200
+Status of Jetty #19: 200
+Status of Jetty #95: 200
+Status of Jetty #89: 200
+Status of Jetty #93: 200
+Status of Jetty #85: 200
+Status of Jetty #86: 200
+Status of Jetty #44: 200
+Status of Jetty #46: 200
+Status of Jetty #1: 200
+Status of Jetty #2: 200
+Status of Jetty #3: 200
+Status of Jetty #27: 200
+Status of Jetty #5: 200
+Status of Jetty #29: 200
+Status of Jetty #6: 200
+Status of Jetty #48: 200
+Status of Jetty #28: 200
+Status of Jetty #47: 200
+Status of Jetty #45: 200
+Status of Jetty #52: 200
+Status of Jetty #41: 0
+  The failure of Jetty #41 was: java.io.EOFException
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.earlyEOF(HttpReceiverOverHTTP.java:264)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:1301)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.shutdown(HttpReceiverOverHTTP.java:169)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.readAndParse(HttpReceiverOverHTTP.java:117)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.process(HttpReceiverOverHTTP.java:70)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.receive(HttpReceiverOverHTTP.java:65)
+	at org.eclipse.jetty.client.http.HttpChannelOverHTTP.receive(HttpChannelOverHTTP.java:75)
+	at org.eclipse.jetty.client.http.HttpConnectionOverHTTP.onFillable(HttpConnectionOverHTTP.java:99)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:744)
+Status of Jetty #42: 0
+  The failure of Jetty #42 was: java.io.EOFException
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.earlyEOF(HttpReceiverOverHTTP.java:264)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:1301)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.shutdown(HttpReceiverOverHTTP.java:169)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.readAndParse(HttpReceiverOverHTTP.java:117)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.process(HttpReceiverOverHTTP.java:70)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.receive(HttpReceiverOverHTTP.java:65)
+	at org.eclipse.jetty.client.http.HttpChannelOverHTTP.receive(HttpChannelOverHTTP.java:75)
+	at org.eclipse.jetty.client.http.HttpConnectionOverHTTP.onFillable(HttpConnectionOverHTTP.java:99)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:744)
+Status of Jetty #21: 200
+Status of Jetty #94: 200
+Status of Jetty #54: 200
+Status of Jetty #26: 200
+Status of Jetty #55: 200
+Status of Jetty #51: 0
+  The failure of Jetty #51 was: java.io.EOFException
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.earlyEOF(HttpReceiverOverHTTP.java:264)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:1301)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.shutdown(HttpReceiverOverHTTP.java:169)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.readAndParse(HttpReceiverOverHTTP.java:117)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.process(HttpReceiverOverHTTP.java:70)
+	at org.eclipse.jetty.client.http.HttpReceiverOverHTTP.receive(HttpReceiverOverHTTP.java:65)
+	at org.eclipse.jetty.client.http.HttpChannelOverHTTP.receive(HttpChannelOverHTTP.java:75)
+	at org.eclipse.jetty.client.http.HttpConnectionOverHTTP.onFillable(HttpConnectionOverHTTP.java:99)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:534)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:607)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:536)
+	at java.lang.Thread.run(Thread.java:744)
+Status of Jetty #56: 200
+Status of Jetty #57: 200
+Status of Jetty #50: 200
+Status of Jetty #4: 200
+Status of Jetty #59: 200
+Status of Jetty #10: 200
+Status of Jetty #49: 200
+Status of Jetty #61: 200
+Status of Jetty #12: 200
+Status of Jetty #25: 200
+Status of Jetty #24: 200
+Status of Jetty #18: 200
+Status of Jetty #53: 200
+Status of Jetty #43: 200
+Status of Jetty #23: 200
+Status of Jetty #63: 200
+Status of Jetty #62: 200
+Status of Jetty #60: 200
+Status of Jetty #58: 200
+Status of Jetty #34: 200
+Status of Jetty #30: 200
+Status of Jetty #33: 200
+Status of Jetty #32: 200
+Status of Jetty #31: 200
+Status of Jetty #78: 200
+
+Testing apache client...
+Status of Apache #0: 200
+Status of Apache #1: 200
+Status of Apache #2: 200
+Status of Apache #3: 200
+Status of Apache #5: 200
+Status of Apache #4: 200
+Status of Apache #7: 200
+Status of Apache #6: 200
+Status of Apache #8: 200
+Status of Apache #9: 200
+Status of Apache #11: 200
+Status of Apache #10: 200
+Status of Apache #13: 200
+Status of Apache #12: 200
+Status of Apache #14: 200
+Status of Apache #15: 200
+Status of Apache #16: 200
+Status of Apache #17: 200
+Status of Apache #19: 200
+Status of Apache #18: 200
+Status of Apache #21: 200
+Status of Apache #20: 200
+Status of Apache #22: 200
+Status of Apache #23: 200
+Status of Apache #24: 200
+Status of Apache #25: 200
+Status of Apache #27: 200
+Status of Apache #26: 200
+Status of Apache #29: 200
+Status of Apache #28: 200
+Status of Apache #30: 200
+Status of Apache #31: 200
+Status of Apache #32: 200
+Status of Apache #33: 200
+Status of Apache #35: 200
+Status of Apache #34: 200
+Status of Apache #37: 200
+Status of Apache #36: 200
+Status of Apache #38: 200
+Status of Apache #39: 200
+Status of Apache #40: 200
+Status of Apache #41: 200
+Status of Apache #42: 200
+Status of Apache #43: 200
+Status of Apache #44: 200
+Status of Apache #45: 200
+Status of Apache #46: 200
+Status of Apache #47: 200
+Status of Apache #49: 200
+Status of Apache #48: 200
+Status of Apache #50: 200
+Status of Apache #51: 200
+Status of Apache #52: 200
+Status of Apache #53: 200
+Status of Apache #55: 200
+Status of Apache #54: 200
+Status of Apache #57: 200
+Status of Apache #56: 200
+Status of Apache #58: 200
+Status of Apache #59: 200
+Status of Apache #61: 200
+Status of Apache #60: 200
+Status of Apache #62: 200
+Status of Apache #63: 200
+Status of Apache #65: 200
+Status of Apache #64: 200
+Status of Apache #67: 200
+Status of Apache #66: 200
+Status of Apache #68: 200
+Status of Apache #69: 200
+Status of Apache #70: 200
+Status of Apache #71: 200
+Status of Apache #72: 200
+Status of Apache #73: 200
+Status of Apache #74: 200
+Status of Apache #75: 200
+Status of Apache #77: 200
+Status of Apache #76: 200
+Status of Apache #78: 200
+Status of Apache #79: 200
+Status of Apache #80: 200
+Status of Apache #81: 200
+Status of Apache #83: 200
+Status of Apache #82: 200
+Status of Apache #84: 200
+Status of Apache #85: 200
+Status of Apache #87: 200
+Status of Apache #86: 200
+Status of Apache #88: 200
+Status of Apache #89: 200
+Status of Apache #90: 200
+Status of Apache #91: 200
+Status of Apache #92: 200
+Status of Apache #93: 200
+Status of Apache #95: 200
+Status of Apache #94: 200
+Status of Apache #97: 200
+Status of Apache #96: 200
+Status of Apache #98: 200
+Status of Apache #99: 200
+Done.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5 seconds
+[INFO] Finished at: Tue Jul 29 10:04:23 UTC 2014
+[INFO] Final Memory: 15M/59M
+[INFO] ------------------------------------------------------------------------
